@@ -1,0 +1,372 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   THEME SKINS ENGINE FOR CARE PHARMACY
+   ========================================================================== */
+
+/* 1. Midnight Emerald (Default Signature Dark) */
+.skin-midnight, [data-skin="midnight"] {
+  --color-slate-950: #030712;
+  --color-slate-900: #0e172a;
+  --color-slate-800: #1b263b;
+  --color-slate-700: #293952;
+  --color-teal-600: #0d9488;
+  --color-teal-500: #14b8a6;
+  --color-teal-400: #2dd4bf;
+  --color-teal-300: #5eead4;
+  --color-teal-700: #0f766e;
+  --color-teal-900: #134e4a;
+
+  --skin-bg: #030712;
+  --skin-header: rgba(14, 23, 42, 0.95);
+  --skin-card: rgba(14, 23, 42, 0.88);
+  --skin-card-solid: #0e172a;
+  --skin-border: #1b263b;
+  --skin-accent: #0d9488;
+  --skin-accent-hover: #0f766e;
+  --skin-accent-light: rgba(13, 148, 136, 0.18);
+  --skin-accent-glow: rgba(13, 148, 136, 0.4);
+  --skin-text-accent: #2dd4bf;
+}
+
+/* 2. Royal Navy & Gold (Imperial Sapphire Dark) */
+.skin-royal-navy, [data-skin="royal-navy"] {
+  --color-slate-950: #040d21;
+  --color-slate-900: #0a1c45;
+  --color-slate-800: #142e6f;
+  --color-slate-700: #1d3b82;
+  --color-teal-600: #f59e0b;
+  --color-teal-500: #fbbf24;
+  --color-teal-400: #fcd34d;
+  --color-teal-300: #fef08a;
+  --color-teal-700: #d97706;
+  --color-teal-900: #78350f;
+
+  --skin-bg: #040d21;
+  --skin-header: rgba(10, 28, 69, 0.96);
+  --skin-card: rgba(10, 28, 69, 0.9);
+  --skin-card-solid: #0a1c45;
+  --skin-border: #1d3b82;
+  --skin-accent: #f59e0b;
+  --skin-accent-hover: #d97706;
+  --skin-accent-light: rgba(245, 158, 11, 0.2);
+  --skin-accent-glow: rgba(245, 158, 11, 0.45);
+  --skin-text-accent: #fbbf24;
+}
+
+/* 3. Forest Mint & Emerald (Apothecary Botanical Dark) */
+.skin-forest-emerald, [data-skin="forest-emerald"] {
+  --color-slate-950: #011711;
+  --color-slate-900: #052e23;
+  --color-slate-800: #084737;
+  --color-slate-700: #0a5441;
+  --color-teal-600: #10b981;
+  --color-teal-500: #34d399;
+  --color-teal-400: #6ee7b7;
+  --color-teal-300: #a7f3d0;
+  --color-teal-700: #059669;
+  --color-teal-900: #064e3b;
+
+  --skin-bg: #011711;
+  --skin-header: rgba(5, 46, 35, 0.96);
+  --skin-card: rgba(5, 46, 35, 0.9);
+  --skin-card-solid: #052e23;
+  --skin-border: #0a5441;
+  --skin-accent: #10b981;
+  --skin-accent-hover: #059669;
+  --skin-accent-light: rgba(16, 185, 129, 0.2);
+  --skin-accent-glow: rgba(16, 185, 129, 0.45);
+  --skin-text-accent: #34d399;
+}
+
+/* 4. Modern Amethyst Neuro (Psychological & Behavioral Dark) */
+.skin-amethyst, [data-skin="amethyst"] {
+  --color-slate-950: #0d051c;
+  --color-slate-900: #200b3b;
+  --color-slate-800: #381366;
+  --color-slate-700: #5b1e94;
+  --color-teal-600: #a855f7;
+  --color-teal-500: #c084fc;
+  --color-teal-400: #d8b4fe;
+  --color-teal-300: #e9d5ff;
+  --color-teal-700: #9333ea;
+  --color-teal-900: #581c87;
+
+  --skin-bg: #0d051c;
+  --skin-header: rgba(32, 11, 59, 0.96);
+  --skin-card: rgba(32, 11, 59, 0.9);
+  --skin-card-solid: #200b3b;
+  --skin-border: #5b1e94;
+  --skin-accent: #a855f7;
+  --skin-accent-hover: #9333ea;
+  --skin-accent-light: rgba(168, 85, 247, 0.22);
+  --skin-accent-glow: rgba(168, 85, 247, 0.45);
+  --skin-text-accent: #c084fc;
+}
+
+/* 5. Minimalist Charcoal & Steel Ice (Modern Graphite Dark) */
+.skin-slate-minimal, [data-skin="slate-minimal"] {
+  --color-slate-950: #0d0f13;
+  --color-slate-900: #1b1e26;
+  --color-slate-800: #272c38;
+  --color-slate-700: #323847;
+  --color-teal-600: #0ea5e9;
+  --color-teal-500: #38bdf8;
+  --color-teal-400: #7dd3fc;
+  --color-teal-300: #bae6fd;
+  --color-teal-700: #0284c7;
+  --color-teal-900: #0369a1;
+
+  --skin-bg: #0d0f13;
+  --skin-header: rgba(27, 30, 38, 0.96);
+  --skin-card: rgba(27, 30, 38, 0.9);
+  --skin-card-solid: #1b1e26;
+  --skin-border: #323847;
+  --skin-accent: #0ea5e9;
+  --skin-accent-hover: #0284c7;
+  --skin-accent-light: rgba(14, 165, 233, 0.2);
+  --skin-accent-glow: rgba(14, 165, 233, 0.45);
+  --skin-text-accent: #38bdf8;
+}
+
+/* 6. Clinical Daylight (Pure White Light Mode) */
+.skin-clinical-light, [data-skin="clinical-light"] {
+  --color-slate-950: #f8fafc;
+  --color-slate-900: #ffffff;
+  --color-slate-800: #e2e8f0;
+  --color-slate-700: #cbd5e1;
+  --color-teal-600: #0284c7;
+  --color-teal-500: #0ea5e9;
+  --color-teal-400: #0284c7;
+  --color-teal-300: #0369a1;
+  --color-teal-700: #0369a1;
+  --color-teal-900: #075985;
+
+  --skin-bg: #f8fafc;
+  --skin-header: rgba(255, 255, 255, 0.98);
+  --skin-card: #ffffff;
+  --skin-card-solid: #ffffff;
+  --skin-border: #cbd5e1;
+  --skin-accent: #0284c7;
+  --skin-accent-hover: #0369a1;
+  --skin-accent-light: rgba(2, 132, 199, 0.12);
+  --skin-accent-glow: rgba(2, 132, 199, 0.3);
+  --skin-text-accent: #0284c7;
+}
+
+/* ==========================================================================
+   DIRECT COMPONENT OVERRIDES PER ACTIVE SKIN
+   ========================================================================== */
+
+/* Main canvas background */
+[class*="skin-"] {
+  background-color: var(--skin-bg) !important;
+}
+
+/* Top Navigation Header & Subheader */
+[class*="skin-"] header,
+[class*="skin-"] nav.sub-navbar {
+  background-color: var(--skin-header) !important;
+  border-color: var(--skin-border) !important;
+}
+
+/* Cards, widgets & content containers */
+[class*="skin-"] .bg-slate-900\/50,
+[class*="skin-"] .bg-slate-900\/40,
+[class*="skin-"] .bg-slate-900\/60,
+[class*="skin-"] .bg-slate-900\/30,
+[class*="skin-"] .bg-slate-900\/25,
+[class*="skin-"] .bg-slate-900\/20,
+[class*="skin-"] .bg-slate-900\/80,
+[class*="skin-"] .bg-slate-900\/90,
+[class*="skin-"] .bg-slate-900\/95 {
+  background-color: var(--skin-card) !important;
+  border-color: var(--skin-border) !important;
+}
+
+[class*="skin-"] .bg-slate-900 {
+  background-color: var(--skin-card-solid) !important;
+  border-color: var(--skin-border) !important;
+}
+
+/* Inner secondary cards, filters, and action buttons */
+[class*="skin-"] .bg-slate-800,
+[class*="skin-"] .bg-slate-800\/80,
+[class*="skin-"] .bg-slate-800\/60,
+[class*="skin-"] .bg-slate-800\/50,
+[class*="skin-"] .bg-slate-800\/40 {
+  background-color: var(--skin-card-solid) !important;
+  border-color: var(--skin-border) !important;
+}
+
+[class*="skin-"] .bg-slate-700 {
+  background-color: var(--skin-border) !important;
+}
+
+/* Inner containers & form fields */
+[class*="skin-"] .bg-slate-950 {
+  background-color: var(--skin-bg) !important;
+  border-color: var(--skin-border) !important;
+}
+
+[class*="skin-"] .bg-slate-950\/40,
+[class*="skin-"] .bg-slate-950\/60,
+[class*="skin-"] .bg-slate-950\/50,
+[class*="skin-"] .bg-slate-950\/30,
+[class*="skin-"] .bg-slate-950\/20 {
+  background-color: rgba(0, 0, 0, 0.45) !important;
+  border-color: var(--skin-border) !important;
+}
+
+/* Global borders */
+[class*="skin-"] .border-slate-800,
+[class*="skin-"] .border-slate-850,
+[class*="skin-"] .border-slate-800\/80,
+[class*="skin-"] .border-slate-800\/60,
+[class*="skin-"] .border-slate-800\/50 {
+  border-color: var(--skin-border) !important;
+}
+
+/* Interactive primary buttons */
+[class*="skin-"] .bg-teal-600,
+[class*="skin-"] .bg-teal-500,
+[class*="skin-"] .bg-teal-700 {
+  background-color: var(--skin-accent) !important;
+  color: #ffffff !important;
+}
+
+[class*="skin-"] .bg-teal-600:hover,
+[class*="skin-"] .bg-teal-500:hover,
+[class*="skin-"] .hover\:bg-teal-500:hover,
+[class*="skin-"] .hover\:bg-teal-600:hover,
+[class*="skin-"] .hover\:bg-teal-700:hover {
+  background-color: var(--skin-accent-hover) !important;
+}
+
+/* Gradient accents */
+[class*="skin-"] .from-teal-600,
+[class*="skin-"] .from-teal-500 {
+  --tw-gradient-from: var(--skin-accent) var(--tw-gradient-from-position) !important;
+}
+[class*="skin-"] .to-emerald-600,
+[class*="skin-"] .to-teal-500 {
+  --tw-gradient-to: var(--skin-accent-hover) var(--tw-gradient-to-position) !important;
+}
+
+/* Accent texts, icons, badges & highlights */
+[class*="skin-"] .text-teal-400,
+[class*="skin-"] .text-teal-500,
+[class*="skin-"] .text-teal-300 {
+  color: var(--skin-text-accent) !important;
+}
+
+[class*="skin-"] .border-teal-500,
+[class*="skin-"] .border-teal-500\/40,
+[class*="skin-"] .border-teal-500\/20,
+[class*="skin-"] .border-teal-500\/30 {
+  border-color: var(--skin-accent) !important;
+}
+
+[class*="skin-"] .bg-teal-500\/10,
+[class*="skin-"] .bg-teal-600\/10,
+[class*="skin-"] .bg-teal-500\/20 {
+  background-color: var(--skin-accent-light) !important;
+  color: var(--skin-text-accent) !important;
+}
+
+/* Soft accent shadows */
+[class*="skin-"] .shadow-teal-900\/20,
+[class*="skin-"] .shadow-teal-900\/25,
+[class*="skin-"] .shadow-teal-900\/40 {
+  box-shadow: 0 10px 25px -5px var(--skin-accent-glow) !important;
+}
+
+/* Form input focus border */
+[class*="skin-"] .focus\:border-teal-500:focus,
+[class*="skin-"] input:focus,
+[class*="skin-"] select:focus,
+[class*="skin-"] textarea:focus {
+  border-color: var(--skin-accent) !important;
+}
+
+/* Clinical daylight light theme specific font colors */
+.skin-clinical-light .text-slate-100,
+.skin-clinical-light .text-slate-200,
+.skin-clinical-light .text-slate-300,
+[data-skin="clinical-light"] .text-slate-100,
+[data-skin="clinical-light"] .text-slate-200,
+[data-skin="clinical-light"] .text-slate-300 {
+  color: #0f172a !important;
+}
+
+.skin-clinical-light .text-slate-400,
+[data-skin="clinical-light"] .text-slate-400 {
+  color: #475569 !important;
+}
+
+@media print {
+  /* Override backgrounds and colors for perfect high-contrast paper print */
+  html, body {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Hide everything on the page except the standalone print-area container */
+  #root > div:not(#print-area), 
+  #root > main:not(#print-area), 
+  #root > section:not(#print-area), 
+  nav, 
+  aside, 
+  header, 
+  button, 
+  input, 
+  select, 
+  .no-print {
+    display: none !important;
+  }
+
+  /* Force display of print-area */
+  #print-area {
+    display: block !important;
+    visibility: visible !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    background: white !important;
+    color: black !important;
+    padding: 1.5cm !important;
+    margin: 0 !important;
+    direction: rtl !important;
+  }
+
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    page-break-inside: auto !important;
+  }
+
+  tr {
+    page-break-inside: avoid !important;
+    page-break-after: auto !important;
+  }
+
+  thead {
+    display: table-header-group !important;
+  }
+
+  /* Force borders to print */
+  table, th, td {
+    border: 1px solid #000000 !important;
+  }
+
+  th, td {
+    padding: 6px 10px !important;
+    text-align: right !important;
+  }
+}

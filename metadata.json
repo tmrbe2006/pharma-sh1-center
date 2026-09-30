@@ -1,0 +1,8 @@
+{
+  "name": "نظام إدارة صيدلية مركز الرعاية-V1",
+  "description": "نظام متطور لإدارة مخزن وصرف الأدوية لذوي الإعاقة مع لوحة تحكم ذكية مدعومة بالذكاء الاصطناعي وتطبيق PWA متكامل",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
